@@ -12,17 +12,5 @@ class %CLASS_MODULE_API_MACRO%%PREFIXED_CLASS_NAME% : public %PREFIXED_BASE_CLAS
 	GENERATED_BODY()
 	
 public:	
-	// Sets default values for this actor's properties
-	%PREFIXED_CLASS_NAME%();
-
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
-	%CLASS_FUNCTION_DECLARATIONS%
-	%CLASS_PROPERTIES%
+	%PREFIXED_CLASS_NAME%(const FObjectInitializer& ObjectInitializer);
 };
